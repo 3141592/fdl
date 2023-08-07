@@ -26,6 +26,13 @@ print(ones_t)
 rand_t = torch.randn((2,3))
 print(rand_t)
 
+print("")
 print("Ch5. Tensor Attributes")
+print("zeros_t.shape: ", zeros_t.shape)
+print("zeros_t.dtype: ", zeros_t.dtype)
+print("zeros_t.device: ", zeros_t.device)
+
+
+
 
 
