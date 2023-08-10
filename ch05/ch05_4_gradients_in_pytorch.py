@@ -83,6 +83,26 @@ print("sub_tensor(2,4): ", sub_tensor)
 x_t[0,1:3,:] = sub_tensor
 print("x_t[0,1:3,:] = subtensor: ", x_t)
 
+print("")
+print("Gradients in PyTorch")
+x = torch.tensor(2.0, requires_grad=True)
+y = torch.tensor(3.0, requires_grad=True)
+z = torch.tensor(1.5, requires_grad=True)
+print("x: ", x)
+print("y: ", y)
+print("z: ", z)
+f = x**2 + y**2 + z**2
+print("f = x**2 + y**2 + z**2")
+print("f: ", f)
+f.backward()
+print("x.grad, y.grad, z.grad: ", x.grad, y.grad, z.grad)
+
+print("")
+g = x**2 + y**3 + z**4
+print("g = x**2 + y**2 + z**2")
+print("g: ", g)
+g.backward()
+print("x.grad, y.grad, z.grad: ", x.grad, y.grad, z.grad)
 
 
 
