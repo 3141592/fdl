@@ -105,15 +105,3 @@ g.backward()
 print("x.grad, y.grad, z.grad: ", x.grad, y.grad, z.grad)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
