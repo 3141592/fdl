@@ -66,6 +66,49 @@ def train(classifier=classifier,
         for minibatch in train_loader:
             data, target = minibatch
             data = data.flatten(start_dim=1)
+            out = classifier(data)
+            computed_loss = loss_fn(out, target)
+            computed_loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+            #print("Keep track of sum of loss of each minibatch")
+            running_loss += computed_loss.item()
+        loss_lt.append(running_loss/len(train_loader))
+        print("Epoch: {} train loss: {}".format(epoch+1,
+            running_loss/len(train_loader)))
+
+    plt.plot([i for i in range(1,epochs+1)], loss_lt)
+    plt.xlabel("Epoch")
+    ply.ylabel("Training Loss")
+    plt.title("MNIST Training Loss: optimizer {}, lr {}".format("SGD", lr))
+    plt.show()
+
+    print("Save state to file as checkpoint")
+    torch.save(classifier.state_dict(), 'mnist.pt')
+
+def test(classifier=classifier,
+         loss_fn=loss_fn):
+    classifier.eval()
+    accuracy = 0.0
+    computed_loss = 0.0
+
+    with torch.no_grad():
+        for data, target in test_loader:
+            data = data.flatten(start_dim=1)
+            out = classifier(data)
+            _, preds = out.max(dim=1)
+            print("Get loss and accuracy")
+            computed_loss += loss_fn(out, target)
+            accuracy += torch.sum(preds==target)
+
+        print("Test loss: {}, test accuracy: {}".format(
+            computed_loss.item()/len(test_loader)*64,
+            accuracy*100.0/(len(test_loader)*64)))
+
+train(classifier, optimizer, epochs, loss_fn)
+
+#test(classifier, loss_fn)
+
 
 
 
