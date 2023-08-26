@@ -21,6 +21,8 @@ class BaseClassifier(nn.Module):
         self.classifier = nn.Sequential(
             nn.Linear(in_dim, feature_dim, bias=True),
             nn.ReLU(),
+            #nn.Linear(feature_dim, feature_dim, bias=True),
+            nn.Conv2D(feature_dim, feature_dim, bias=True),
             nn.Linear(feature_dim, out_dim, bias=True)
         )
 

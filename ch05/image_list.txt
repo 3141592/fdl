@@ -1,0 +1,4 @@
+figure_5-2_Adagrad.png
+figure_5-2_Adam.png
+figure_5-2_RMSprop.png
+figure_5-2_SGD.png
