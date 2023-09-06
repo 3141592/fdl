@@ -1,0 +1,3 @@
+chatgpt_1.png
+chatgpt_20_epochs.png
+figure_6-3.png

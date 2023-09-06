@@ -1,0 +1,5 @@
+momentum 0.3
+Test loss: 18.246285019406848, test accuracy: 91.4311294555664
+
+momentum 0.9
+Test loss: 7.646103391222134, test accuracy: 96.03900909423828
