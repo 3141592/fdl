@@ -1,0 +1,52 @@
+
+---------- ---------- ---------- ----------
+Ch5. Building the MNIST Classifier in PyTorch
+
+Load in MNIST dataset from PyTorch
+Setting the dataset device to GPU
+Get the device of the first data sample.
+Print the device of the first data sample.
+
+Instantiate model, optimizer, and hyperparameter(s)
+Epoch: 1, Training loss: 1.2643901620910112
+Epoch: 2, Training loss: 0.4941246762299843
+Epoch: 3, Training loss: 0.39371531361392315
+Epoch: 4, Training loss: 0.35299602120733464
+Epoch: 5, Training loss: 0.3282714723381025
+Epoch: 6, Training loss: 0.31026770684447114
+Epoch: 7, Training loss: 0.2957275431992403
+Epoch: 8, Training loss: 0.2824119224604259
+Epoch: 9, Training loss: 0.2708194587610042
+Epoch: 10, Training loss: 0.26015318022655654
+Epoch: 11, Training loss: 0.25040674343832264
+Epoch: 12, Training loss: 0.24098242211665935
+Epoch: 13, Training loss: 0.23255960517791288
+Epoch: 14, Training loss: 0.22440421535595775
+Epoch: 15, Training loss: 0.21705143536125293
+Epoch: 16, Training loss: 0.20963490146722621
+Epoch: 17, Training loss: 0.2032285977933389
+Epoch: 18, Training loss: 0.19680145368186522
+Epoch: 19, Training loss: 0.19085388212228444
+Epoch: 20, Training loss: 0.18516194987605247
+Epoch: 21, Training loss: 0.17994548015193199
+Epoch: 22, Training loss: 0.17478447589777044
+Epoch: 23, Training loss: 0.16997794005900685
+Epoch: 24, Training loss: 0.16523605272539263
+Epoch: 25, Training loss: 0.16111719837066715
+Epoch: 26, Training loss: 0.1568230081385355
+Epoch: 27, Training loss: 0.15285968932825555
+Epoch: 28, Training loss: 0.148822438434513
+Epoch: 29, Training loss: 0.14535177637860655
+Epoch: 30, Training loss: 0.1418414396891144
+Epoch: 31, Training loss: 0.13834510240425815
+Epoch: 32, Training loss: 0.13515350042876087
+Epoch: 33, Training loss: 0.13213188768124212
+Epoch: 34, Training loss: 0.12924725742839865
+Epoch: 35, Training loss: 0.12623197153043836
+Epoch: 36, Training loss: 0.12360990427132608
+Epoch: 37, Training loss: 0.12104142109738357
+Epoch: 38, Training loss: 0.11860078929075554
+Epoch: 39, Training loss: 0.11606994524661667
+Epoch: 40, Training loss: 0.1136381763166615
+Save state to file as checkpoint
+Test loss: 7.803847780652866, test accuracy: 96.0688705444336
