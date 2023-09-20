@@ -52,7 +52,7 @@ lr = 1e-3
 loss_fn = nn.CrossEntropyLoss()
 epochs = 40
 classifier = BaseClassifier(in_dim, feature_dim, out_dim)
-optimizer = optim.SGD(classifier.parameters(), lr=lr, momentum=0.9)
+optimizer = optim.SGD(classifier.parameters(), lr=lr, momentum=0.9, nesterov=True)
 
 def train(classifier=classifier,
           optimizer=optimizer,

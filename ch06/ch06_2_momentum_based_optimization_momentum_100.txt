@@ -1,0 +1,112 @@
+
+---------- ---------- ---------- ----------
+Ch5. Building the MNIST Classifier in PyTorch
+
+Load in MNIST dataset from PyTorch
+Setting the dataset device to GPU
+Get the device of the first data sample.
+Print the device of the first data sample.
+
+Instantiate model, optimizer, and hyperparameter(s)
+Epoch: 1, Training loss: 1.2152363705927376
+Epoch: 2, Training loss: 0.4888070679581496
+Epoch: 3, Training loss: 0.3914703818749009
+Epoch: 4, Training loss: 0.3515986554674121
+Epoch: 5, Training loss: 0.32715919497075363
+Epoch: 6, Training loss: 0.3089129271458334
+Epoch: 7, Training loss: 0.293761254063865
+Epoch: 8, Training loss: 0.28063866251837344
+Epoch: 9, Training loss: 0.2688533504213542
+Epoch: 10, Training loss: 0.25809585913888683
+Epoch: 11, Training loss: 0.24806517160841143
+Epoch: 12, Training loss: 0.23889116582665235
+Epoch: 13, Training loss: 0.23045551096166628
+Epoch: 14, Training loss: 0.22235214122052768
+Epoch: 15, Training loss: 0.21479569706343002
+Epoch: 16, Training loss: 0.20771959326319347
+Epoch: 17, Training loss: 0.20100521323666262
+Epoch: 18, Training loss: 0.19485422871562083
+Epoch: 19, Training loss: 0.18900031105541726
+Epoch: 20, Training loss: 0.1833903937499279
+Epoch: 21, Training loss: 0.1781168107602642
+Epoch: 22, Training loss: 0.1729473621050305
+Epoch: 23, Training loss: 0.16811854330334328
+Epoch: 24, Training loss: 0.16355313721305526
+Epoch: 25, Training loss: 0.1590358176981526
+Epoch: 26, Training loss: 0.1550349652119823
+Epoch: 27, Training loss: 0.15121001882482565
+Epoch: 28, Training loss: 0.14723209309965563
+Epoch: 29, Training loss: 0.14364504789524496
+Epoch: 30, Training loss: 0.1401729107137396
+Epoch: 31, Training loss: 0.13678946342271592
+Epoch: 32, Training loss: 0.1336256996083107
+Epoch: 33, Training loss: 0.13066629253860032
+Epoch: 34, Training loss: 0.1277276103509896
+Epoch: 35, Training loss: 0.12516781277279418
+Epoch: 36, Training loss: 0.12233531249881681
+Epoch: 37, Training loss: 0.11970652466508816
+Epoch: 38, Training loss: 0.11718987209051213
+Epoch: 39, Training loss: 0.11489339677223773
+Epoch: 40, Training loss: 0.11266514409714734
+Epoch: 41, Training loss: 0.11037668109194303
+Epoch: 42, Training loss: 0.10832324092075832
+Epoch: 43, Training loss: 0.10631483973665183
+Epoch: 44, Training loss: 0.10428262905064803
+Epoch: 45, Training loss: 0.10241256756330731
+Epoch: 46, Training loss: 0.10063448165263385
+Epoch: 47, Training loss: 0.09884452421678853
+Epoch: 48, Training loss: 0.09699619210350996
+Epoch: 49, Training loss: 0.0953903916413024
+Epoch: 50, Training loss: 0.09365482451612635
+Epoch: 51, Training loss: 0.09219440244543337
+Epoch: 52, Training loss: 0.09054884131747618
+Epoch: 53, Training loss: 0.08910817878821226
+Epoch: 54, Training loss: 0.0877003074526342
+Epoch: 55, Training loss: 0.08626098377006586
+Epoch: 56, Training loss: 0.08486474385020384
+Epoch: 57, Training loss: 0.08356081429364554
+Epoch: 58, Training loss: 0.08226840496400813
+Epoch: 59, Training loss: 0.08097886645705747
+Epoch: 60, Training loss: 0.07994486762584051
+Epoch: 61, Training loss: 0.07862895790106261
+Epoch: 62, Training loss: 0.07747410463768917
+Epoch: 63, Training loss: 0.07633012000507097
+Epoch: 64, Training loss: 0.07515928892792066
+Epoch: 65, Training loss: 0.07420699961130013
+Epoch: 66, Training loss: 0.0731849680090748
+Epoch: 67, Training loss: 0.07202324966963596
+Epoch: 68, Training loss: 0.07115949627095416
+Epoch: 69, Training loss: 0.07017025622084483
+Epoch: 70, Training loss: 0.06920640306598914
+Epoch: 71, Training loss: 0.06829465407905962
+Epoch: 72, Training loss: 0.06734154174334682
+Epoch: 73, Training loss: 0.06645092492732507
+Epoch: 74, Training loss: 0.06562572615945945
+Epoch: 75, Training loss: 0.06472423130711878
+Epoch: 76, Training loss: 0.06383111738095454
+Epoch: 77, Training loss: 0.06311964499913077
+Epoch: 78, Training loss: 0.062268406633279726
+Epoch: 79, Training loss: 0.061468444729863264
+Epoch: 80, Training loss: 0.060795519599762524
+Epoch: 81, Training loss: 0.059976361564862954
+Epoch: 82, Training loss: 0.05929920999809846
+Epoch: 83, Training loss: 0.05859889749731463
+Epoch: 84, Training loss: 0.05777028180571444
+Epoch: 85, Training loss: 0.05712695311266444
+Epoch: 86, Training loss: 0.05649856517145009
+Epoch: 87, Training loss: 0.05581519491414526
+Epoch: 88, Training loss: 0.055165648776124405
+Epoch: 89, Training loss: 0.0544220377499464
+Epoch: 90, Training loss: 0.053956082363281324
+Epoch: 91, Training loss: 0.05325264570021283
+Epoch: 92, Training loss: 0.05265275751556288
+Epoch: 93, Training loss: 0.05201066025584412
+Epoch: 94, Training loss: 0.05141216998042138
+Epoch: 95, Training loss: 0.050827447693846596
+Epoch: 96, Training loss: 0.05026744163757973
+Epoch: 97, Training loss: 0.04973549304255989
+Epoch: 98, Training loss: 0.04921307947053743
+Epoch: 99, Training loss: 0.048633934828196605
+Epoch: 100, Training loss: 0.04814057927459542
+Save state to file as checkpoint
+Test loss: 4.8394359418541, test accuracy: 97.30294799804688

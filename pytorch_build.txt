@@ -1,0 +1,8 @@
+conda activate pytorch_build
+
+This error can generally be solved using the `develop` workflow
+        $ python setup.py develop && python -c "import torch"  # This should succeed
+    or by running Python from a different directory.
+
+# Build without cuda
+USE_CUDA=0 python setup.py develop --cmake
