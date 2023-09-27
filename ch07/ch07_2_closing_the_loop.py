@@ -6,8 +6,6 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from torchvision.datasets import MNIST
 from torchvision.transforms import ToTensor
-from torchinfo import summary
-import torchsummary
 
 print("")
 print("Load in MNIST dataset from PyTorch")
