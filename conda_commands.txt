@@ -1,3 +1,4 @@
 #change environment
+conda activate pytorch_build
 conda activate torch
-
+conda env list
